@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* background: linear-gradient(to right, #101010 25%, #a31790 100%); */
+body {
+    background: #000 !important;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.getStarted {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 5rem;
+    width: 50%; 
+    height: 85vh;
+    border-radius: 2rem;
+    box-shadow: #101010 0px 0px 10px 0px;
+}
+
+.home-info {
+    float: left;
+}
+
+.crRocket {
+    height: 105vh;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    border-radius: 8rem;
+}
+
+
+
+@font-face {
+  font-family: 'vampire-font'; /* Give your custom font a name */
+  src: url('./vampire\ font/vamnw.woff2') format('woff2'), /* Format and URL to your font file */
+       
+  /* Add additional font properties if needed, like font-weight and font-style */
+}
+
+
+ .brand {
+    font-size: 5rem;
+    font-family: 'vampire-font';
+    overflow: hidden; 
+    border-right: .15em solid #5c00e6; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(100, end),
+      blink-caret .75s step-end infinite;
+  } 
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #5c00e6; }
+  } 
+  
+
+
+.version {
+    font-size: 0.85rem;
+    font-weight: 1;
+}
+
+/*
+.connect-btn {
+    background: #a31790;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 1rem 0.5rem;
+    text-transform: uppercase;
+    box-shadow: #101010 0px 0px 5px 0px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+}
+*/
+.connect-btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s;
+  top: 30px;
+}
+
+.connect-btn:hover {
+  color: #fff;
+  background: #9457EB;
+  box-shadow: 0 0 10px #9457EB, 0 0 40px #9457EB, 0 0 80px #9457EB;
+  transition-delay: 1s;
+}
+
+.connect-btn span {
+  position: absolute;
+  display: block;
+}
+
+.connect-btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #9457EB);
+}
+
+.connect-btn:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+.connect-btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #9457EB);
+  height: 2px;
+}
+
+.connect-btn:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.connect-btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #9457EB);
+}
+
+.connect-btn:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.connect-btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #9457EB);
+}
+
+.connect-btn:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/* Add a media query for screens with a maximum width of 767px (typical mobile devices) */
+@media screen and (max-width: 767px) {
+    body {
+      overflow: auto; /* Re-enable scrolling on mobile devices */
+    }
+  
+    .getStarted {
+      width: 100%; /* Adjust the width to fit the mobile screen */
+/* Allow height to adjust based on content */
+      padding-top: 2rem; /* Reduce padding to make it more mobile-friendly */
+      padding-left: 0;
+    }
+  
+    .crRocket {
+      height: auto; /* Allow height to adjust based on content */
+      width: 100%; /* Adjust the width to fit the mobile screen */
+      bottom: initial; /* Remove the absolute positioning */
+      left: 0; /* Align the rocket to the left on mobile */
+      right: initial; /* Reset the right property */
+    }
+  
+    
+
+    .logo {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+  
+    .connect-btn {
+      margin-top: 5rem; /* Reduce the top margin for better spacing */
+    }
+
+    .footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        font-size: 5px;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+  }
+  
+
+  /* Cloud */
+
+/* Style for the cloud and instructions */
+.cloud-instructions {
+  position: absolute;
+  background-color: rgba(74, 24, 136, 0.8); /* Match the background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  border-radius: 50%; /* Create a circular cloud-like shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 37%;
+  left: 28%; /* Start off-screen to the left */
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0;
+  transform-origin: top right; /* Adjust the origin for scaling animation */
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap; /* Prevent the cloud from breaking into multiple lines */
+
+  /* Create the rotating line */
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(148, 87, 235, 0.8)); /* Neon Purple Glow */
+    top: 50%;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    animation: rotateLine 3s linear infinite; /* Apply rotation animation */
+  }
+
+  }
+
+
+  .trinity-effect {
+    font-size: 4em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    position: relative;
+  }
+  
+  .trinity-effect::before {
+    content: 'TRINITY';
+    position: absolute;
+    color: #5c00e6; /* Dark purple color */
+    width: 0; /* Set initial width to 0 */
+    overflow: hidden;
+    transition: 1s;
+    border-right: 0px solid #5c00e6; /* Dark purple color */
+    -webkit-text-stroke: 1px #5c00e6; /* Dark purple color */
+  }
+  
+  .trinity-effect:hover::before {
+    width: 100%; /* Expand width to 100% on hover */
+    filter: drop-shadow(0 0 25px #5c00e6); /* Dark purple color */
+    border-right: 8px solid #5c00e6; /* Dark purple color */
+  }

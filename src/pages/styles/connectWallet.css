@@ -1,0 +1,53 @@
+.wallet-info-container {    
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    display: flex; 
+    flex-direction: row;
+  }
+
+  .wallet-info {
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  .account {
+    background: #202428;
+    font-size: 1.1rem;
+    color: white;
+    border: 1px solid black;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.8rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    width: 10rem;
+    float: left;
+  }
+
+  
+  .balance {
+    background: #202428;
+    font-size: 1.1rem;
+    color: white;
+    border: 1px solid black;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.8rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    width: 7rem;
+    float: left;
+  }
+  
+  button {
+    background: rgb(79, 144, 219);
+    font-size: 1.1rem;
+    font: inherit;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.8rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    width: 10rem;
+    float: right;
+  }

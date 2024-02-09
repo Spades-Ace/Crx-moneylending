@@ -1,0 +1,12 @@
+/* Canvas.css */
+
+/* To make the canvas transparent */
+canvas {
+    opacity: 0.5;
+  }
+  
+  /* To hide the default outline on the canvas */
+  canvas:focus {
+    outline: none;
+  }
+  

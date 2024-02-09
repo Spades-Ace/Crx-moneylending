@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: linear-gradient(to bottom, #1d003b, #1e1e1e, #1e1e1e);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-y: scroll; 
+  scrollbar-width: thin; 
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 69rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navbar {
+  color: #fff;
+  height: 4rem;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.connect-button {
+  background: #DC97F9;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.connect-button:active {
+  background: #d00057;
+  color: #fdfdfd;
+}
+
+.navbar label {
+  background: #202428;
+  font-size: 1.1rem;
+  color: white;
+  border: 1px solid black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  margin: 0.2rem;
+}
+
+.account-button {
+  background: #202428;
+  font-size: 1.1rem;
+  font: inherit;
+  color: white;
+  border: 1px solid black;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.account-button:active {
+  background: #303438;
+  color: #fdfdfd;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.cards-2nd {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.cards-2nd .card {
+  flex-basis: calc(33.33% - 25px);
+  justify-content: center;
+  align-items: center;
+  background: #202428;
+  color: #fff;
+  border-radius: 0.8rem;
+  margin: 1.25rem 0.7rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 1.2rem 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #202428;
+  color: #fff;
+  border-radius: 0.8rem;
+  margin: 1.25rem 0.7rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 1.2rem 2rem;
+}
+
+.card button {
+  background: #6F04F8;
+  color: white;
+  font: inherit;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  /* margin: 1rem; */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card button:active {
+  background: #0e61d3;
+  color: #fdfdfd;
+}
+
+.card form {
+  width: 100%;
+}
+
+.card input:hover,
+.card input:focus {
+  outline: 2px solid #383c44;
+}
+
+.card label {
+  background: #282c34;
+  width: 100%;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  padding: 0.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card input {
+  background: #282c34;
+  border: hidden;
+  width: 100%;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  justify-content: flex-end;
+  padding-bottom: 0.07rem;
+  /* font-size: 0.7rem; */
+  color: #d4d4d4;
+}
+
+footer .container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 0.7rem;
+}
+
+.user-sec {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  color: #fff;
+  margin: 1.25rem 0.7rem;
+  padding: 0 3rem;
+  text-align: right;
+}
+
+.user-div button {
+  background: #6F04F8;
+  color: white;
+  font: inherit;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 1rem; 
+  width: 10rem;
+}
+
+.user-div button:hover {
+  background: #0e61d3;
+  color: #fdfdfd;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background: linear-gradient(to bottom, #1d003b, #1e1e1e, #1e1e1e);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  transition: background-color 0.3s; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.value-box {
+  background-color : transparent;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.value-item {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* style for Set verifier popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.005);
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-box {
+  position: relative;
+  width: 40%;
+  height: 50%;
+  border: 1px solid #ccc;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  background: #202428;
+  color: #fff;
+  border-radius: 0.8rem;
+  margin: 5rem 0.7rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 5rem 4rem;
+}
+
+.popup-box .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.popup-box input {
+  background: #282c34;
+  border: hidden;
+  width: 100%;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.popup-box form {
+  width: 100%;
+}
+
+.popup-box input:hover,
+.popup-box input:focus {
+  outline: 2px solid #383c44;
+}
+
+.popup-box button:active {
+  background: #0e61d3;
+  color: #fdfdfd;
+}
+
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select a file';
+  color: white;
+  display: inline-block;
+  background: #6F04F8;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 18pt;
+}
+
+.custom-file-input:active {
+  outline: 0;
+}
+
