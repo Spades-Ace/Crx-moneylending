@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # æpp boilerplate ReactJS frontend
 
 This boilerplate allows everyone to easy start when building an æpp with ReactJS on top of the æternity ecosystem.
@@ -57,3 +58,6 @@ This dependency is imported and should work out of the box with this implementat
 
 Since we aim to make this boilerplate as universally connective as possible, we implemented an easy wallet discovery feature to get the connected Superhero wallet address and AE balance. This process started from the `useAeternitySDK.ts` file that uses the imported `@aeternity/aepp-sdk` dependency. That file exposes SDK instance the same as method to connect to wallet, reactive variables to get current address and network id.
 The `useAeternitySDK.ts` module is then used in the `App.js` file to get the connected wallet address and initialized client that provides the AE balance for the connected address.
+=======
+# Crx-moneylending
+>>>>>>> cbe88a57f17044df8783bd1e8c6d19790b6fbc3b
