@@ -1,13 +1,13 @@
 {
-  "short_name": "æpp",
-  "name": "æpp boilerplate",
+  "short_name": "App",
+  "name": "App",
 	"start_url": ".",
   "display": "standalone",
 	"status_bar": "#311b58",
   "theme_color": "#f7296e",
 	"orientation": "portrait",
   "background_color": "#ffffff",
-	"description": "A ReactJS boilerplate to build æpps in the æternity ecosystem.",
+	"description": "A ReactJS ",
   "icons": [
     {
       "src": "favicon.ico",

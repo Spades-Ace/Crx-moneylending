@@ -1,42 +1,50 @@
 .header {
-    position: relative; /* Ensure position relative for absolute positioning inside */
+    position: relative; /* Ensure position relative for absolute positioning inside /
     height: 120px;
     margin-bottom: 5px;
-    background-color: rgba(0, 0, 0, 0.2); /* Black translucent background */
+    background-color: rgba(0, 0, 0, 0.2); / Black translucent background */
     padding: 10px;
 }
 
 img {
-    height: 100px;
+    height: 200px;
     float: left;
 }
 
 .balance-container {
+    top: 90px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    width: 50vw;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 .balance-info {
     background-color: #9d0af9;
+    color: white;
+    font-size: 1.25rem;
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.button {
+.delink-btn {
     position: absolute;
-    top: 50px; /* Adjust according to your layout */
-    right: 20px;
-    background-color: #9d0af9;
-    color: rgb(241, 6, 143);
-    padding: 5px 10px;
+    margin-left: 28rem;
+    font-size: 1.25rem;
+    background-color: #df1616;
+    color: rgb(255, 255, 255);
+    padding: 9px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.button:hover {
+.delink-btn:hover {
     background-color: #7b08c2;
 }

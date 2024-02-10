@@ -75,14 +75,12 @@ const Home = () => {
                         <h1 className="brand trinity-effect">
                             TRINITY
                         </h1>
-                        <p className='version'>v1.0</p>
+                        <p className='version'>v0.1.0</p>
                     </section>
 
                     <br />
-                    <h4 className="tagline">Future-proof your Digital Assets with Innovative Storage Solutions</h4>
+                    <h4 className="tagline">Connect your Wallet to start your experience!</h4>
                     <br />
-                    <p className='info'>Connect your Wallet to start your experience!</p>
-
                     <a href="#"  className="connect-btn" onMouseEnter={showCloud} onMouseLeave={hideCloud} onClick={handleConnectClick}>
                         <span></span>
                         <span></span>
@@ -99,7 +97,7 @@ const Home = () => {
                         {cloudVisible && (
                             <>
                                 <p>Click to connect your wallet</p>
-                                <p>Follow the instructions in MetaMask</p>
+                                <p>Follow the instructions in SuperHero</p>
                             </>
                         )}
                     </motion.div>

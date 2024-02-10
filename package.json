@@ -1,6 +1,6 @@
 {
-  "name": "aepp-boilerplate-react",
-  "version": "0.1.1",
+  "name": "crx-moneylending",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@aeternity/aepp-sdk": "^13.0.1",

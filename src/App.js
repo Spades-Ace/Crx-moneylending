@@ -8,8 +8,8 @@ const App = () => {
   const [address, setAddress] = useState(null);
   const [balance, setBalance] = useState(null);
 
-  console.log('App.js - address:', address);
-  console.log('App.js - balance:', balance);
+  // console.log('App.js - address:', address);
+  // console.log('App.js - balance:', balance);
 
   return (
     <WalletContext.Provider value={{ address, balance, setAddress, setBalance }}>

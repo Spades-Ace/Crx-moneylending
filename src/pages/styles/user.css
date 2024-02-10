@@ -25,6 +25,7 @@ img {
 h1,
 h2 {
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .layout {
@@ -99,46 +100,40 @@ h2 {
   height: 100%;
 }
 
-.cards {
-  display: flex;
-  flex-direction: column;
-  max-width: 75rem;
-  margin: 4rem auto;
-  padding: 0 2rem;
-  text-align: center;
-}
-
-.cards-2nd {
+.app {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2rem;
-  text-align: center;
-  padding: 20px;
-}
-
-.cards-2nd .card {
-  flex-basis: calc(33.33% - 25px);
   justify-content: center;
   align-items: center;
-  background: #202428;
+  height: 100%;
   color: #fff;
-  border-radius: 0.8rem;
-  margin: 1.25rem 0.7rem;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-  padding: 1.2rem 2rem;
+  padding: 1rem;;
 }
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+} 
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 33%;
+  height: 35vh;
   background: #202428;
   color: #fff;
   border-radius: 0.8rem;
   margin: 1.25rem 0.7rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 1.2rem 2rem;
+  overflow: auto;
 }
 
 .card button {
@@ -197,6 +192,8 @@ footer {
   padding-bottom: 0.07rem;
   /* font-size: 0.7rem; */
   color: #d4d4d4;
+  text-align: center;
+  padding: 2rem;
 }
 
 footer .container {
@@ -266,94 +263,11 @@ body::-webkit-scrollbar-track {
   margin-bottom: 5px;
 }
 
-/* style for Set verifier popup */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.005);
-  backdrop-filter: blur(5px);
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.popup-box {
-  position: relative;
-  width: 40%;
-  height: 50%;
-  border: 1px solid #ccc;
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
-  background: #202428;
-  color: #fff;
-  border-radius: 0.8rem;
-  margin: 5rem 0.7rem;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-  padding: 5rem 4rem;
-}
 
-.popup-box .close-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: red;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 
-.popup-box input {
-  background: #282c34;
-  border: hidden;
-  width: 100%;
-  border-radius: 0.8rem;
-  font-size: 1.3rem;
-  color: #f1f1f1;
-  padding: 0.4rem 0.5rem;
-  margin-bottom: 1rem;
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 90%;
+  }
 }
-
-.popup-box form {
-  width: 100%;
-}
-
-.popup-box input:hover,
-.popup-box input:focus {
-  outline: 2px solid #383c44;
-}
-
-.popup-box button:active {
-  background: #0e61d3;
-  color: #fdfdfd;
-}
-
-.custom-file-input {
-  color: transparent;
-}
-.custom-file-input::-webkit-file-upload-button {
-  visibility: hidden;
-}
-.custom-file-input::before {
-  content: 'Select a file';
-  color: white;
-  display: inline-block;
-  background: #6F04F8;
-  border: 1px solid #999;
-  border-radius: 3px;
-  padding: 5px 8px;
-  outline: none;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 18pt;
-}
-
-.custom-file-input:active {
-  outline: 0;
-}
-
